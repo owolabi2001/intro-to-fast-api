@@ -22,6 +22,8 @@ db :list[User] = [
     )
 ]
 
+# @app.include_router(users.router, prefix='/api/v1/users', tags=['users'])
+
 @app.get('/')
 def root():
     return {"message": "Hello Mondo"}
